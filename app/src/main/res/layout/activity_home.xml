@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212">
+
+    <!-- APP BAR -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.Material3.Dark.ActionBar"
+        android:elevation="4dp">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:backgroundTint="#1E1E2E"
+            app:title="✨ Minhas Crônicas"
+            app:titleTextColor="#FFFFFF"
+            app:subtitle="Toque para editar ou criar"
+            app:subtitleTextColor="#AAAAAA"
+            app:popupTheme="@style/ThemeOverlay.Material3.Dark"
+            app:navigationIcon="@drawable/ic_menu" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!-- LISTA DE ANOTAÇÕES -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvEntries"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:clipToPadding="false"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <!-- BOTÃO FLUTUANTE PARA NOVA ENTRADA -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabNewEntry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="20dp"
+        android:src="@drawable/ic_add"
+        app:backgroundTint="#2BBBAD"
+        app:tint="@android:color/white"
+        android:contentDescription="Nova Anotação"
+        app:shapeAppearanceOverlay="@style/FabRounded" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

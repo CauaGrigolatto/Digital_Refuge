@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/etEntryText"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:hint="Escreva algo que vale a pena lembrar..."
+            android:gravity="top|start"
+            android:background="@drawable/edittext_card"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#888888"
+            android:textSize="16sp"
+            android:padding="16dp"
+            android:fontFamily="sans-serif-medium" />
+
+        <ImageView
+            android:id="@+id/ivPhotoPreview"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="16dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/imageview_rounded"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:id="@+id/btnCamera"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="48dp"
+                android:text="📷 Câmera"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#3333AA"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/button_primary" />
+
+            <Button
+                android:id="@+id/btnGallery"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="48dp"
+                android:text="🖼️ Galeria"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#3366CC"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/button_primary" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="💾 Salvar Anotação"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/button_accent" />
+    </LinearLayout>
+</ScrollView>

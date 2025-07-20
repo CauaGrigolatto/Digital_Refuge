@@ -1,0 +1,20 @@
+<!-- res/values/themes.xml -->
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- 1. Tema base para o aplicativo -->
+    <style name="Theme.DigitalRefuge" parent="Theme.Material3.Dark">
+        <!-- Aqui definimos as cores primárias, secundárias, etc. -->
+            <item name="colorPrimary">@color/navy_blue</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- ... outras definições de cor e estilo ... -->
+    </style>
+
+    <!-- 2. A variação que estamos usando -->
+    <style name="Theme.RefugioDigital.NoActionBar" parent="Theme.DigitalRefuge">
+        <!-- Esta linha desativa a ActionBar padrão -->
+        <item name="windowActionBar">false</item>
+        <!-- Esta linha remove a barra de título que envolve a ActionBar -->
+        <item name="windowNoTitle">true</item>
+    </style>
+
+</resources>

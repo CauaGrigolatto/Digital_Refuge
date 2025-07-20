@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_back"
+            android:background="@drawable/button_icon"
+            android:contentDescription="Voltar" />
+
+        <TextView
+            android:id="@+id/tvEntryDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#AAAAAA"
+            android:textSize="18sp"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginTop="20dp" />
+
+        <ImageView
+            android:id="@+id/ivEntryPhoto"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:layout_marginTop="16dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/imageview_rounded"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvEntryText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif"
+            android:lineSpacingExtra="6dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/edittext_card"
+            android:padding="16dp" />
+    </LinearLayout>
+</ScrollView>

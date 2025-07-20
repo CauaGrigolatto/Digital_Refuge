@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1C1E3C"> <ImageView
+    android:id="@+id/ivAppLogo"
+    android:layout_width="120dp"
+    android:layout_height="120dp"
+    android:src="@drawable/ic_digital_refuge_logo" android:contentDescription="Logo do Refúgio Digital"
+    app:layout_constraintVertical_chainStyle="packed"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintBottom_toTopOf="@id/tvWelcomeMessage"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintVertical_bias="0.4"/> <TextView
+    android:id="@+id/tvWelcomeMessage"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Bem-vindo ao Refúgio Digital"
+    android:textColor="#FFFFFF"
+    android:textSize="24sp"
+    android:fontFamily="sans-serif-medium"
+    android:gravity="center"
+    android:layout_marginTop="32dp"
+    android:layout_marginStart="24dp"
+    android:layout_marginEnd="24dp"
+    app:layout_constraintTop_toBottomOf="@id/ivAppLogo"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintBottom_toTopOf="@id/tvInstruction"/>
+
+    <TextView
+        android:id="@+id/tvInstruction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Toque no sensor para desbloquear"
+        android:textColor="#B0B0C4" android:textSize="16sp"
+        android:fontFamily="sans-serif-light"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/tvWelcomeMessage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/ivFingerprintIcon"/>
+
+    <ImageView
+        android:id="@+id/ivFingerprintIcon"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/ic_fingerprint" app:tint="#8A2BE2" android:contentDescription="Ícone de Digital"
+        android:layout_marginTop="48dp"
+        app:layout_constraintTop_toBottomOf="@id/tvInstruction"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btnAlternativeUnlock"/>
+
+    <Button
+        android:id="@+id/btnAlternativeUnlock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Usar PIN/Senha"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/bg_rounded_button" android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:layout_marginTop="64dp"
+        app:layout_constraintTop_toBottomOf="@id/ivFingerprintIcon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
