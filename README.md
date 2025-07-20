@@ -45,21 +45,6 @@ para quem busca bem-estar emocional por meio da escrita.
 
 ---
 
-## 📁 Estrutura do Projeto
-
-📦 DigitalRefuge
-┣ 📁 app
-┃ ┣ 📁 src
-┃ ┃ ┣ 📁 main
-┃ ┃ ┃ ┣ 📄 AndroidManifest.xml
-┃ ┃ ┃ ┣ 📁 java/... (Activities, ViewModels, DAO)
-┃ ┃ ┃ ┣ 📁 res/layout (XMLs lindos 🖌️)
-┃ ┃ ┃ ┣ 📁 drawable (ícones e backgrounds)
-┃ ┃ ┃ ┣ 📁 values (temas e strings)
-┣ 📄 README.md (você está aqui)
-
----
-
 ## 🛠️ Desenvolvido com
 
 - Android Studio Narwhal 🦄🐋
