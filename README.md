@@ -65,7 +65,7 @@ Entrega: **20/07/2025** | Pitch: **21/07/2025**
 ---
 
 ## 🎬 Demonstração em Vídeo
-Quer ver o DigitalRefuge em ação?
+Quer ver o Digital Refuge em ação?
 Clique no link abaixo para assistir a uma demonstração completa do aplicativo:
 https://www.canva.com/design/DAGtv8K7UXA/Ccy2WMC2E7zikKLd0nxjZw/watch?utm_content=DAGtv8K7UXA&utm_campaign=share_your_design&utm_medium=link2&utm_source=shareyourdesignpanel
 
