@@ -22,6 +22,6 @@ interface EntryDAO {
     @Query("SELECT * FROM entry WHERE id = :id")
     suspend fun findById(id: Long): Entry?
 
-    @Query("SELECT * FROM entry ORDER BY date DESC")
+    @Query("SELECT * FROM entry ORDER BY date DESC, id DESC")
     suspend fun getAll(): List<Entry>
 }
